@@ -1,7 +1,7 @@
 # Reference: <https://postmarketos.org/devicepkg>
 pkgname="device-samsung-manta"
 pkgdesc="Google Nexus 10"
-pkgver=0.3
+pkgver=0.2
 pkgrel=3
 url="https://postmarketos.org"
 license="MIT"
@@ -12,11 +12,11 @@ makedepends="devicepkg-dev"
 source="deviceinfo"
 
 build() {
-       devicepkg_build $startdir $pkgname
+	devicepkg_build $startdir $pkgname
 }
 
 package() {
-       devicepkg_package $startdir $pkgname
+	devicepkg_package $startdir $pkgname
 }
 
 sha512sums="626b6a2c979805270e1aef1d4f8de3c7f9f04e26294fbfb1db1cd9b80be27887ad915ec68783f1a5d3791b7d150bc6c0fc100647d30cc5d4801ae2ff3270448e  deviceinfo"
